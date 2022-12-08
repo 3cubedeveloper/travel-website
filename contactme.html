@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.ico">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- This page allow users to contact me -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Colosseum</a></li> 
+                <li><a href="grandcanal.html">Grand Canal</a></li> 
+                <li><a href="leaningtower.html">Leaning Tower</a></li>
+                <li><a href="touristattraction.html">Tourist Attraction Sites</a></li>
+				<li><a href="attractionsites.php">Common Sites</a>
+                <!--<li><a href="signup.html">Signup</a></li>-->
+                <li><a href="#">Contact me</a></li>
+				<li><a href="registration.php" id="register">Register</a></li>
+				<li><a href="login.php" id="login">Login</a></li>
+            </ul>
+            </nav>
+        <div id="container-form">
+        <form id="contact-form" onsubmit="return validateForm()">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+            <div id="first-name-error">First Name is required</div>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            <div id="last-name-error">Last Name is required</div>
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Please enter your message" required></textarea>
+            <div id="message-error">Message is required</div>
+            <input type="submit" id="contact-btn" value="Send">
+         </form>
+        </div>
+         <script src="scripts/script.js" async></script>
+    </body>
+</html>

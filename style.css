@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/*using rgb*/
+body {
+    background: #F2F2F2;
+    margin: 0;
+    font-family: 'Poppins';
+  }
+  .city{
+    padding: 2em;
+    width: 20em;
+    height: 20em;
+    margin: 1em;
+    border: #808000;
+    border-radius: 10ex;
+  }
+  .index-p{
+    color: #808000;
+  }
+  a {
+    text-decoration: none;
+  }
+  #footer{
+    background-color: aqua;
+    text-align: center;
+  }
+
+  /*css overriding*/
+  .blue-text{
+    color: blue;
+  }
+  .red-text {
+    color: red;
+  }
+  /*navigation links*/
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: blue;
+  overflow:hidden;
+}
+.navigation ul li {
+  float: left;
+}
+.navigation a {
+  display: block;
+  padding: 10px;
+  background-color: blue;
+  color:#fff;
+  text-align: center;
+}
+.navigation li a:hover {
+  background-color: red;
+  opacity: .8;
+}
+  
+    /*overflow property*/
+.scroll {
+    overflow: scroll;
+
+}
+.hidden {
+    overflow: hidden;
+}
+.auto {
+    overflow: auto;
+}
+.visible { overflow: visible;}
+      
+    /* table styling */
+table {
+    width: 90%;
+    margin: 12px auto;
+}
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+th {
+  text-align: center;
+}
+#table img {
+    width: 200px;
+    height: auto;
+}
+tr:nth-child(even) {
+   background-color: aqua;
+   color: #fff;
+}
+
+/* form styling */
+#container-form {
+  width: 50%;
+  margin: 0 auto;
+}
+#contact-form, #signup-form , #login-form{
+  width: 100%;
+  margin: 12px auto;
+}
+input[type="text"], input[type="password"], input[type="email"], textarea {
+  display: block;
+  margin: 10px 0;
+  padding: 5px 0 5px 5px;
+  border: 1px solid blue;
+  width: 100%;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+  height: 35px;
+}
+#contact-btn, #signup-btn {
+  width: 40%;
+  heignt: 40px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: blue;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#contact-btn:hover, #signup-btn:hover {
+  opacity: .8;
+}
+#first-name-error, #last-name-error, #message-error {
+  visibility: hidden;
+}
+#online {
+  background-color: yellow;
+  color: white;
+  padding: 20px;
+}
+.my-online {
+  background-color: red;
+  color: white;
+  padding: 20px;
+}
+#register{
+	background-color: #000;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+#login{
+	background-color: green;
+	border-radius: 5px;
+}
+#logout{
+	background-color: red;
+	border-radius: 5px;
+}
+.login-button {
+	color: #fff;
+	background: blue;
+	border: 0;
+	outline: 0;
+	width: 60%;
+	height: 50px;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media only screen and (max-width: 768px) {
+  .navigation a {
+    width: 100%;
+  }
+}
